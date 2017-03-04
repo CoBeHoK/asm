@@ -1,0 +1,50 @@
+LXI H,7000
+MVI C,00  
+PUSH H    
+MOV M,C   
+INX H     
+INX H     
+INX H     
+INR C     
+MOV A,C   
+ANI 0F    
+CPI 00    
+JNZ 1006  
+POP H     
+LXI D,0032
+DAD D     
+MOV A,C   
+CPI 00    
+JNZ 1005  
+HLT       
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          

@@ -1,0 +1,50 @@
+LXI H,0000
+LXI D,2000
+MVI B,03  
+LDAX D    
+INX D     
+ADD L     
+MOV L,A   
+JNC 1010  
+INR H     
+DCR B     
+JNZ 1008  
+MOV A,H   
+CALL F815 
+MOV A,L   
+CALL F815 
+HLT       
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          

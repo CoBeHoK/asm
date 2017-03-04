@@ -1,0 +1,4 @@
+PRINT macro        ; макрос печати символа из AL
+    mov AH,0Eh
+    int 10h
+endm 

@@ -1,0 +1,50 @@
+LXI H,7067
+MVI B,12  
+MVI C,25  
+MVI A,23  
+CALL 1019 
+LXI H,709A
+MVI B,10  
+MVI C,23  
+MVI A,20  
+CALL 1019 
+HLT       
+PUSH B    
+PUSH D    
+PUSH H    
+LXI D,0032
+PUSH H    
+PUSH B    
+MOV M,A   
+INX H     
+DCR C     
+JNZ 1021  
+POP B     
+POP H     
+DAD D     
+DCR B     
+JNZ 101F  
+POP H     
+POP D     
+POP B     
+RET       
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          

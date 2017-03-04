@@ -1,0 +1,50 @@
+MVI E,23  
+CALL 1006 
+HLT       
+PUSH H    
+PUSH B    
+PUSH PSW  
+LXI H,7000
+LXI B,03E8
+MVI E,23  
+MOV M,E   
+INX H     
+DCX B     
+MOV A,B   
+ORA C     
+JNZ 1011  
+POP PSW   
+POP H     
+POP H     
+RET       
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
